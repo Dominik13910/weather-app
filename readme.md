@@ -1,5 +1,5 @@
 # Weather APP
-Live App : [click her](https://dominik13910.github.io/weather-app/)
+Live App : [Click here](https://dominik13910.github.io/weather-app/)
 
 Create weather app using
 - html
