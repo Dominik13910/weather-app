@@ -30,5 +30,57 @@
         font-size: 16px;
         border: 0;
         border-radius: 10px;
+        margin: 0 0 30px 0;
     }
+    &__mainInfo{
+        display: flex;
+        border-radius: 20px;
+        padding: 30px;
+        background-color: rgba(0,0,0,0.3);
+        gap: 30px;
+        align-items: center;
+        color: $weatherCloudColor;
+    }
+    &__temp{
+        display: flex;
+        .degree{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .unit{
+            font-size: 20px
+        }
+    }
+    &__data{
+        p{
+            font-size: 14px;
+            margin: 0 0 5px 0;
+            &:last-of-type{
+                margin: 0;
+            }
+        }
+    }
+    &__next{
+   color: $weatherHeaderColor;
+   margin: 30px 0;
+   @include fluid-type(300px, 1200px, 20px, 40px);
+   text-align: center;
+
+   
+    }
+    &__days{
+        display: flex;
+        border-radius: 20px;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.3);
+        gap: 30px;
+        align-items: center;
+        color: $weatherCloudColor;
+        padding: 30px;
+    }
+    &__day{ 
+    color: $weatherCloudColor;
+    text-align: center;
+    }
+   
 }

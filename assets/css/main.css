@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
 }
 .weather__header {
-  color: #fff;
+  color: rgb(6, 5, 5);
   font-size: 30px;
   font-size: clamp(30px, 20px + 3.3333333333vw, 60px);
   margin: 0 0 30px 0;
@@ -58,4 +58,64 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   border: 0;
   border-radius: 10px;
+  margin: 0 0 30px 0;
+}
+.weather__mainInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.weather__temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.weather__temp .degree {
+  font-size: 40px;
+  font-weight: 700;
+}
+.weather__temp .unit {
+  font-size: 20px;
+}
+.weather__data p {
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+.weather__data p:last-of-type {
+  margin: 0;
+}
+.weather__next {
+  color: rgb(6, 5, 5);
+  margin: 30px 0;
+  font-size: 20px;
+  font-size: clamp(20px, 13.3333333333px + 2.2222222222vw, 40px);
+  text-align: center;
+}
+.weather__days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+}
+.weather__day {
+  color: #fff;
+  text-align: center;
 }
